@@ -21,11 +21,9 @@ const Contact = () => {
                         </div>
 
                         <p className='pt-2 pb-8 '>
-                            Thank you for taking the time to review my portfolio! <br />
+                            Thank you for taking the time to review my portfolio! 
                             If you're interested in working together or have any questions,
-                            I'd love to hear from you. <br />
-                            You can reach me by email at
-                           <span className='font-bold'>dohung2ka3@gmail.com</span> or social media links below
+                            I'd love to hear from you.
                         </p>
 
                         <div>
