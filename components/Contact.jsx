@@ -16,18 +16,16 @@ const Contact = () => {
                 shadow-blue-300 bg-white'>
 
                     <div className='w-full md:w-1/2 h-full rounded-xl p-4'>
-                        <div className=''>
-                            <Image src={contact} className="rounded-xl" />
+                        <div>
+                            <Image src={contact} alt="background" className="rounded-xl" />
                         </div>
 
                         <p className='pt-2 pb-8 '>
                             Thank you for taking the time to review my portfolio! <br />
                             If you're interested in working together or have any questions,
                             I'd love to hear from you. <br />
-
                             You can reach me by email at
-                            <span className='font-bold'>dohung2ka3@gmail.com</span> or social media links below
-                            
+                           <span className='font-bold'>dohung2ka3@gmail.com</span> or social media links below
                         </p>
 
                         <div>
