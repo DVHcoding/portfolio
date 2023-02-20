@@ -1,115 +1,108 @@
-import Image from 'next/image'
-import React from 'react'
-import contact from '../assets/keqing.jpg';
-import { FaFacebook, FaGithub, FaTiktok } from 'react-icons/fa';
-import { AiFillYoutube } from 'react-icons/ai';
+import Image from "next/image";
+import React from "react";
+import contactus from "../assets/keqing.jpg";
+import { FaFacebook, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
-    return (
-        <div id='contact' className='w-full'>
-            <div className='max-w-screen-xl mx-auto px-5 py-16 text-center md:text-left'>
+  return (
+    <div id="contact" className="w-full">
+      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
+        <h2 className="text-5xl md:text-5xl tracking-wider uppercase text-blue-500 font-bold">
+          contact
+        </h2>
 
-                <h2 className='text-4xl md:text-5xl tracking-wider uppercase
-                text-blue-500 font-bold mb-5'>Contact</h2>
+        <div className="flex flex-col md:flex-row gap-8 shadow-xl shadow-blue-300 bg-white mt-4">
+          <div className="w-full md:w-1/2 h-full rounded-xl p-4">
+            <Image
+              src={contactus}
+              alt="man with laptop"
+              className="rounded-xl"
+            />
+            <p className="pt-2 pb-8">
+              I am open to talk regarding freelancing or full-time
+              opportunities. Fell free to contact me using your preferred
+              medium.
+            </p>
 
-                <div className='flex flex-col md:flex-row gap-8 shadow-xl 
-                shadow-blue-300 bg-white'>
-
-                    <div className='w-full md:w-1/2 h-full rounded-xl p-4'>
-                        <div>
-                            <Image src={contact} alt="background" className="rounded-xl" />
-                        </div>
-
-                        <p className='pt-2 pb-8 '>
-                            Thank you for taking the time to review my portfolio! 
-                            If you're interested in working together or have any questions,
-                            I'd love to hear from you.
-                        </p>
-
-                        <div>
-                            <div className='grid grid-cols-2 mx-auto w-4/5 gap-10'>
-                                <a href='https://www.tiktok.com/@art_hung203?lang=vi-VN' className='flex items-center justify-center rounded-full shadow-md
-                                  shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer'>
-                                    <FaTiktok size={20} />
-                                </a>
-
-                                <a href='https://www.youtube.com/channel/UC68wxgZP_CyvMVa1W1z2MWg' className='flex items-center justify-center rounded-full shadow-md
-                                  shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer'>
-                                    <AiFillYoutube size={20} />
-                                </a>
-
-                                <a href='https://www.facebook.com/profile.php?id=100044022424100' className='flex items-center justify-center rounded-full shadow-md
-                                  shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer'>
-                                    <FaFacebook size={20} />
-                                </a>
-
-                                <a href='https://github.com/DVHcoding' className='flex items-center justify-center rounded-full shadow-md
-                                   shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer'>
-                                    <FaGithub size={20} />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    {/* form stuff */}
-
-                    <div className='w-full md:w-1/2 h-full rounded-xl p-4'>
-                        <div className='p-4 text-left'>
-                            <form action='https://getform.io/f/308a9c02-07a5-490f-a593-55f171360d39' method='POST'>
-                                <div className='grid md:grid-cols-2 gap-4 w-full  py-2'>
-                                    <div className='flex flex-col '>
-                                        <label className='capitalize text-sm py-2 text-slate-600 font-light'>
-                                            Name
-                                        </label>
-
-                                        <input type="text" name='name' className='border-2 rounded-lg p-3
-                                        flex focus:outline-none border-blue-200' />
-                                    </div>
-
-                                    <div className='flex flex-col'>
-                                        <label className='capitalize text-sm py-2 text-slate-600 font-light'>
-                                            Phone
-                                        </label>
-
-                                        <input type="phone" name='phone' className='border-2 rounded-lg p-3
-                                        flex focus:outline-none border-blue-200' />
-                                    </div>
-
-                                    <div className='flex flex-col md:col-span-2'>
-                                        <label className='capitalize text-sm py-2 text-slate-600 font-light'>
-                                            Email
-                                        </label>
-
-                                        <input type="email" name='email' className='border-2 rounded-lg p-3
-                                        flex focus:outline-none border-blue-200' />
-                                    </div>
-
-                                    <div className='flex flex-col md:col-span-2'>
-                                        <label className='capitalize text-sm py-2 text-slate-600 font-light'>
-                                            Message
-                                        </label>
-
-                                        <textarea name="message" rows="10" className='border-2
-                                        rounded-lg p-3 flex focus:outline-none border-blue-200'></textarea>
-                                    </div>
-                                </div>
-
-
-                                <div className='flex items-center justify-center'>
-                                    <button className='group my-8 bg-blue-500 text-white px-6
-                                        py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer
-                                        hover:scale-105 duration-200'>
-                                        Send message
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+            <div className="grid grid-cols-2 mx-auto w-4/5 gap-10">
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer">
+                <FaLinkedin size={25} />
+              </div>
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer">
+                <FaTwitter size={25} />
+              </div>
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer">
+                <FaFacebook size={25} />
+              </div>
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer">
+                <FaGithub size={25} />
+              </div>
             </div>
-        </div>
-    )
-}
+          </div>
 
-export default Contact
+          {/* form stuff  */}
+          <div className="w-full md:w-1/2 h-full rounded-xl p-4">
+            <div className="p-4 text-left">
+              <form
+                action="https://getform.io/f/357378e6-dce8-451c-8d15-226c219dc76a"
+                method="POST"
+              >
+                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                  <div className="flex flex-col">
+                    <label className="capitalize text-sm py-2 text-slate-600 font-light">
+                      name
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      className="border-2 rounded-lg p-3 flex focus:outline-none border-blue-200"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <label className="capitalize text-sm py-2 text-slate-600 font-light">
+                      phone
+                    </label>
+                    <input
+                      type="text"
+                      name="phone"
+                      className="border-2 rounded-lg p-3 flex focus:outline-none border-blue-200"
+                    />
+                  </div>
+
+                  <div className="flex flex-col col-span-2">
+                    <label className="capitalize text-sm py-2 text-slate-600 font-light">
+                      email
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      className="border-2 rounded-lg p-3 flex focus:outline-none border-blue-200"
+                    />
+                  </div>
+                  <div className="flex flex-col col-span-2">
+                    <label className="capitalize text-sm py-2 text-slate-600 font-light">
+                      message
+                    </label>
+                    <textarea
+                      name="message"
+                      rows="10"
+                      className="border-2 rounded-lg p-3 flex focus:outline-none border-blue-200"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-center">
+                  <button className="my-8 bg-blue-500 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer hover:scale-105 duration-200">
+                    send message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
