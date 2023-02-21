@@ -130,25 +130,25 @@ const Navbar = () => {
 
                         <div>
                             <div className='grid grid-cols-2 mx-auto w-4/5 gap-10'>
-                                <div className='flex items-center justify-center rounded-full shadow-md
+                                <a href="https://www.tiktok.com/@art_hung203?lang=vi-VN" className='flex items-center justify-center rounded-full shadow-md
                                 shadow-white p-3 cursor-pointer'>
                                     <FaTiktok size={20} />
-                                </div>
+                                </a>
 
-                                <div className='flex items-center justify-center rounded-full shadow-md
+                                <a href="https://www.youtube.com/channel/UC68wxgZP_CyvMVa1W1z2MWg" className='flex items-center justify-center rounded-full shadow-md
                                 shadow-white p-3 cursor-pointer'>
                                     <AiFillYoutube size={20} />
-                                </div>
+                                </a>
 
-                                <div className='flex items-center justify-center rounded-full shadow-md
+                                <a href="https://www.facebook.com/profile.php?id=100044022424100" className='flex items-center justify-center rounded-full shadow-md
                                 shadow-white p-3 cursor-pointer'>
                                     <FaFacebook size={20} />
-                                </div>
+                                </a>
 
-                                <div className='flex items-center justify-center rounded-full shadow-md
+                                <a  href="https://github.com/DVHcoding" className='flex items-center justify-center rounded-full shadow-md
                                 shadow-white p-3 cursor-pointer'>
                                     <FaGithub size={20} />
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
