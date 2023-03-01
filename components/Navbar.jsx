@@ -1,9 +1,12 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import { FaBars, FaTimes, FaFacebook, FaGithub ,FaTiktok} from 'react-icons/fa';
+import { FaBars, FaTimes, FaFacebook, FaGithub, FaTiktok } from 'react-icons/fa';
 import { AiFillYoutube } from "react-icons/ai";
+import { BsSun } from "react-icons/bs"
+import { BsMoonStarsFill } from "react-icons/bs"
 
-const Navbar = () => {
+
+const Navbar = ({ theme, toggleTheme }) => {
 
     const [navigation, setNavigation] = useState(false);
     const [pageScroll, setPageScroll] = useState(false)
@@ -60,8 +63,9 @@ const Navbar = () => {
 
 
                 <div>
-                    <ul className='hidden md:flex'>
-                        {
+                    <ul className='flex items-center gap-10'>
+                        <div className='hidden md:flex'>
+                            {
                             links.map(({ id, link }) => (
                                 <Link key={id} href={`/#${link}`}>
                                     <li className='ml-10 text-sm uppercase cursor-pointer
@@ -71,6 +75,25 @@ const Navbar = () => {
                                 </Link>
                             ))
                         }
+                        </div> 
+
+                        <div className='dark_mode hidden md:block '>
+                            <span onClick={toggleTheme}>
+                                {
+                                    theme === "dark-theme" ? (
+                                        <span>
+                                            <BsMoonStarsFill /> Dark
+                                        </span>
+                                    )
+                                        :
+                                        (
+                                            <span>
+                                                <BsSun /> Light
+                                            </span>
+                                        )
+                                }
+                            </span>
+                        </div>
                     </ul>
 
 
@@ -82,6 +105,9 @@ const Navbar = () => {
                         )
                     }
                 </div>
+
+
+
 
             </div>
 
@@ -145,7 +171,7 @@ const Navbar = () => {
                                     <FaFacebook size={20} />
                                 </a>
 
-                                <a  href="https://github.com/DVHcoding" className='flex items-center justify-center rounded-full shadow-md
+                                <a href="https://github.com/DVHcoding" className='flex items-center justify-center rounded-full shadow-md
                                 shadow-white p-3 cursor-pointer'>
                                     <FaGithub size={20} />
                                 </a>

@@ -14,3 +14,18 @@
   }
 }
 
+.dark-theme { 
+  background: #000;
+  color: white;
+  transition: .3s ease-out;
+}
+
+.dark_mode span { 
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+} 
+
+

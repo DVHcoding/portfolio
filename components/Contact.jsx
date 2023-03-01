@@ -7,14 +7,14 @@ import { AiFillYoutube } from "react-icons/ai";
 const Contact = () => {
     return (
         <div id="contact" className="w-full">
-            <div className="max-w-screen-xl mx-auto px-5 py-16 text-center md:text-left">
+            <div className="max-w-screen-xl mx-auto px-5 py-16 text-center md:text-left ">
                 <h2 className="text-4xl md:text-5xl tracking-wider uppercase
                 text-blue-500 font-bold mb-5">
                     contact
                 </h2>
 
                 <div className="flex flex-col md:flex-row gap-8 shadow-xl 
-                shadow-blue-300 bg-white">
+                shadow-blue-300 ">
                     <div className="w-full md:w-1/2 h-full rounded-xl p-4">
                         <Image
                             src={contactus}
@@ -56,39 +56,39 @@ const Contact = () => {
                             <form action="https://getform.io/f/308a9c02-07a5-490f-a593-55f171360d39" method="POST">
                                 <div className="grid md:grid-cols-2 gap-4 w-full  py-2">
                                     <div className="flex flex-col ">
-                                        <label className="capitalize text-sm py-2 text-slate-600 font-light">
+                                        <label className="capitalize text-sm py-2 font-light">
                                             Name
                                         </label>
 
                                         <input type="text" name="name" className="border-2 rounded-lg p-3
-                                        flex focus:outline-none border-blue-200" />
+                                        flex focus:outline-none border-blue-200 text-black " />
                                     </div>
 
                                     <div className="flex flex-col">
-                                        <label className="capitalize text-sm py-2 text-slate-600 font-light">
+                                        <label className="capitalize text-sm py-2 font-light">
                                             Phone
                                         </label>
 
                                         <input type="phone" name="phone" className="border-2 rounded-lg p-3
-                                        flex focus:outline-none border-blue-200" />
+                                        flex focus:outline-none border-blue-200 text-black" />
                                     </div>
 
                                     <div className="flex flex-col md:col-span-2">
-                                        <label className="capitalize text-sm py-2 text-slate-600 font-light">
+                                        <label className="capitalize text-sm py-2 font-light">
                                             Email
                                         </label>
 
                                         <input type="email" name="email" className="border-2 rounded-lg p-3
-                                        flex focus:outline-none border-blue-200" />
+                                        flex focus:outline-none border-blue-200 text-black" />
                                     </div>
 
                                     <div className="flex flex-col md:col-span-2">
-                                        <label className="capitalize text-sm py-2 text-slate-600 font-light">
+                                        <label className="capitalize text-sm py-2 font-light">
                                             Message
                                         </label>
 
                                         <textarea name="message" rows="10" className="border-2
-                                        rounded-lg p-3 flex focus:outline-none border-blue-200"></textarea>
+                                        rounded-lg p-3 flex focus:outline-none border-blue-200 text-black"></textarea>
                                     </div>
                                 </div>
 
